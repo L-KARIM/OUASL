@@ -1,0 +1,192 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+#footer .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    gap: 10px;
+}
+/** css rules end **/
+
+/** footer start **/
+#footer {
+    --main-color: #FDFBF9;
+    --tints-1: #FFFFFF;
+    --shades-1: #F4F1EB;
+    --secondary-color: #F4F1EB;
+    --third-color: #000000;
+    --fourth-color: #1C3533;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    font-family: "Cairo", sans-serif;
+    background-color: var(--main-color);
+}
+#footer .content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 100px 50px 100px 50px;
+}
+#footer .FooterLinksContainer,
+#footer .PlatformDescriptionContainer {
+    flex: 1;
+}
+#footer .FooterLinksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 353px 16px 0;
+    direction: rtl;
+}
+#footer .FooterLinks {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    margin: 0;
+    padding-bottom: 55px;
+    padding-right: 0;
+    justify-content: right;
+    list-style: none;
+}
+#footer .FooterLinks .link {
+    display: flex;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 600;
+    color: var(--third-color);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px;
+}
+#footer .FooterLinks li{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#footer .ContactInformationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footer .ContactInformationContainer h3 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+}
+#footer .ContactInformationContainer p {
+    font-size: 17px;
+    line-height: 150%;
+    margin: 0;
+}
+#footer .PlatformDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 10px;
+}
+#footer .PlatformDescriptionContainer .PlatformDescriptionInnerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 51px;
+}
+#footer .PlatformDescriptionInnerContainer .LogoContainer {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 10px;
+}
+#footer .PlatformDescriptionInnerContainer .PlatformDescriptionTextContainer {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    direction: rtl;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+}
+#footer .PlatformDescriptionInnerContainer .PlatformDescriptionTextContainer p {
+    margin: 0;
+}
+#footer .PlatformDescriptionContainer .SocialMediaLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: right;
+}
+#footer .SocialMediaLinks.responsivelinks,
+#footer .FooterLinks.responsivelinks {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #footer .content {
+        padding: 80px 50px 80px 50px;
+    }
+    #footer .FooterLinks:not(.responsivelinks),
+    #footer .SocialMediaLinks:not(.responsivelinks) {
+        display: none;
+    }
+    #footer .FooterLinks.responsivelinks,
+    #footer .SocialMediaLinks.responsivelinks {
+        display: flex;
+    }
+    #footer .FooterLinksContainer {
+        padding-right: 19px; 
+        justify-content: flex-start;
+    }
+     #footer .ContactInformationContainer {
+        order: 1;
+    }
+    #footer .SocialMediaLinks.responsivelinks {
+        order: 2;
+        padding-top: 10px;
+        gap: 10px;
+    }
+    #footer .PlatformDescriptionInnerContainer {
+        order: 1;
+    }
+    #footer .FooterLinks.responsivelinks {
+        order: 2;
+        padding: 0;
+        padding-top: 90px;
+        flex-direction: row;
+        white-space: nowrap;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #footer .content {
+        flex-direction: column-reverse;
+        padding: 78px 12px;
+    }
+    #footer .PlatformDescriptionContainer,
+    #footer .PlatformDescriptionInnerContainer {
+        align-items: center;
+    }
+    #footer .PlatformDescriptionInnerContainer .PlatformDescriptionTextContainer p {
+        text-align: center;
+        padding: 0 40px;
+    }
+    #footer .ContactInformationContainer {
+        align-items: center;
+        text-align: center;
+    }
+    #footer .FooterLinks.responsivelinks {
+        padding: 0;
+    }
+    #footer .FooterLinks.responsivelinks, #footer .SocialMediaLinks.responsivelinks {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #footer .PlatformDescriptionInnerContainer .PlatformDescriptionTextContainer p {
+        padding: 0;
+    }
+}
+/** footer end **/
