@@ -1,0 +1,102 @@
+
+@media screen and (max-width: 375px) {
+  /* phone */
+}
+
+.h2-newsletter {
+  width: 339px;
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.div-titleheader {
+  width: 335px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.span-email-placeholder {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.input-email {
+  width: 321px;
+  backdrop-filter: blur(6.1px);
+  border-radius: 44px;
+  background-color: rgba(255, 255, 255, 0.47);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 19px 29px;
+}
+.button-subscribe {
+  width: 137px;
+  border-radius: 32px;
+  background-color: #fff;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 35px;
+  box-sizing: border-box;
+  color: #1c3533;
+}
+.form-emailcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-size: 15px;
+}
+.div-wrapper {
+  position: absolute;
+  top: calc(50% - 192.5px);
+  left: calc(50% - 175.5px);
+  width: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.div-container {
+  width: 375px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  left: 0px;
+  height: 525px;
+  z-index: 0;
+}
+.section-form-form {
+  width: 100%;
+  position: relative;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("Assets/section-form--form.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: 46px;
+  color: #fff;
+  font-family: Cairo;
+}
+
+section {
+  margin: 0;
+  line-height: normal;
+}
