@@ -1,0 +1,151 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+#hero .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  gap: 10px;
+}
+/** css rules end **/
+
+/** hero start **/
+#hero {
+--main-color: #FDFBF9;
+--tints-1: #FFFFFF;
+--secondary-color: #F4F1EB;
+--third-color: #000000;
+--fourth-color: #1C3533;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  direction: ltr;
+  font-family: "Cairo", sans-serif;
+  background-color: var(--main-color);
+}
+#hero .topContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 334.5px;
+}
+#hero .Badge{
+    gap: 10px;
+    border: 1.5px solid var(--third-color);
+    border-radius: 31px;
+    font-weight: 600;
+    font-size: 14px;
+}
+#hero .Badge .BadgeText{
+  padding: 7.5px 23px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+#hero .Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 40px 0px 40px 0px;
+}
+#hero .Content h1{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 0;
+
+}
+#hero .Content .Subtitle{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    padding: 21px 80.5px 0 80.5px;
+    margin: 0;
+}
+#hero .Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding-bottom: 79px;
+}
+#hero .Buttons .Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 18.5px 43px 18.5px 60px;
+  color: var(--third-color);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid var(--third-color);
+}
+#hero .Buttons .startNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19.5px 95px;
+  color: var(--tints-1);
+  background-color: var(--fourth-color);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#hero .ImageContainer {
+  width: 100%;
+  height: 100%;
+}
+#hero .swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .swiper-wrapper{
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #hero .topContent{
+    padding: 0px 100.5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .topContent{
+    padding: 0px 54.5px;
+  }
+  #hero .Content h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #hero .topContent{
+    padding: 0px 24.5px;
+  }
+  #hero .Content h1{
+    font-size: 40px;
+  }
+  #hero .Content .Subtitle{
+    padding: 21px 40px 0 40px;
+  } 
+  #hero .Buttons{
+    flex-direction: column;
+  }
+  #hero .ImageContainer img{
+    height: 289px;
+  }
+}
+
+/** hero end **/
