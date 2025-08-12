@@ -1,0 +1,157 @@
+
+@media screen and (max-width: 768px) {
+  /* tablet */
+}
+
+.h5-teachersheadertext {
+  position: relative;
+  line-height: 100%;
+  font-weight: 600;
+}
+.div-teachers {
+  width: 116px;
+  border-radius: 31px;
+  border: 1.5px solid #000;
+  box-sizing: border-box;
+  height: 29px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 23px;
+}
+.h2-teacherstitle {
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+}
+.div-teacherstitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  font-size: 46px;
+}
+.div-teachersheader {
+  width: 369px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+}
+.div-teacherimagecontainer-icon {
+  width: 668px;
+  height: 378px;
+  object-fit: cover;
+}
+.p-teacherdescription {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.div-teacherdescriptioncontain {
+  width: 668px;
+  border-radius: 15px;
+  background-color: #f4f1eb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 131px 34px;
+  box-sizing: border-box;
+}
+.div-teacherimagecontainer-icon1 {
+  width: 668px;
+  height: 377px;
+  object-fit: cover;
+}
+.div-teacherimagecontainer {
+  width: 668px;
+  border-radius: 15px;
+  background-color: #f4f1eb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 131px 38px;
+  box-sizing: border-box;
+}
+.div-teacherimagecontainer-icon2 {
+  width: 668px;
+  height: 375px;
+  object-fit: cover;
+}
+.div-teacherimagecontainer1 {
+  width: 668px;
+  border-radius: 15px;
+  background-color: #f4f1eb;
+  height: 376px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 131px 34px;
+  box-sizing: border-box;
+}
+.div-teachersgrid {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 25px;
+  font-size: 22px;
+}
+.div-wrapper {
+  position: absolute;
+  top: 99px;
+  left: 50px;
+  width: 668px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+}
+.div-container {
+  width: 768px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  left: 0px;
+  height: 2595px;
+  z-index: 0;
+}
+.section-teachers-teachers {
+  width: 100%;
+  position: relative;
+  background-color: #fdfbf9;
+  height: 2595px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px 60px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  font-family: Cairo;
+}
+
+section {
+  margin: 0;
+  line-height: normal;
+}
