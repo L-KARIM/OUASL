@@ -1,0 +1,108 @@
+
+@media screen and (max-width: 375px) {
+  /* phone */
+}
+
+.h5-abouttext {
+  position: relative;
+  line-height: 100%;
+  font-weight: 600;
+}
+.div-about {
+  width: 93px;
+  border-radius: 31px;
+  border: 1.5px solid #000;
+  box-sizing: border-box;
+  height: 29px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 23px;
+}
+.h2-title {
+  width: 351px;
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+}
+.p-description {
+  width: 337px;
+  position: relative;
+  font-size: 15px;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+}
+.div-textcontainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  font-size: 40px;
+}
+.div-heroicon {
+  width: 73.5px;
+  border-radius: 36.76px;
+  height: 73.5px;
+}
+.div-imagecontainer {
+  align-self: stretch;
+  border-radius: 30px;
+  height: 436px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 181px 0px;
+  box-sizing: border-box;
+  background-image: url("Assets\\div--ImageContainer.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.div-wrapper {
+  position: absolute;
+  top: 70px;
+  left: 12px;
+  width: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.div-container {
+  width: 375px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  left: 0px;
+  height: 841px;
+  z-index: 0;
+}
+.section-about-about {
+  width: 100%;
+  position: relative;
+  background-color: #fdfbf9;
+  height: 841px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 22px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+  font-family: Cairo;
+}
+
+section {
+  margin: 0;
+  line-height: normal;
+}

@@ -1,0 +1,114 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+#about .container {
+    width: 100%;
+    padding: 70px 50px;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    gap: 10px;
+}
+/** css rules end **/
+
+/** about start **/
+#about {
+--main-color: #FDFBF9;
+--tints-1: #FFFFFF;
+--secondary-color: #F4F1EB;
+--third-color: #000000;
+--fourth-color: #1C3533;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    font-family: "Cairo", sans-serif;
+    background-color: var(--main-color);
+}
+
+#about .content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+#about .about {
+    align-self: flex-end;
+    gap: 10px;
+}
+#about .about h5{
+    padding: 7px 35px;
+    margin: 0;
+    border: 1.5px solid var(--third-color);
+    border-radius: 31px;
+    font-weight: 600;
+    font-size: 14px;
+}
+#about .TextContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+#about .Description {
+    display: flex;
+    align-self: flex-start;
+    text-align: right;
+    margin: 0;
+    padding: 20.5px 251px 20.5px 0;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 600;
+}
+#about .Title {
+    display: flex;
+    align-self: flex-end;
+    font-size: 46px;
+    font-weight: 600;
+    margin: 0;
+    text-align: right;
+}
+#about .landino_video_iframe img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    height: 436px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #about .about {
+        align-self: center;
+    }
+    #about .TextContainer {
+        flex-direction: column-reverse;
+    }
+    #about .Title {
+        text-align: center;
+        align-self: center;
+        padding: 0 65px 25px 65px;
+    }
+    #about .Description {
+        align-self: center;
+        text-align: center;
+        padding: 0 138px 0 138px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about .Title {
+        padding: 0 0 25px 0;
+    }
+    #about .Description {
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #about .Title {
+        font-size: 40px;
+    }
+    #about .Description {
+        padding: 0 7px 0 7px;
+    }
+}
+/** about end **/
