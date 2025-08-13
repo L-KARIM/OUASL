@@ -1,0 +1,110 @@
+
+@media screen and (max-width: 375px) {
+  /* phone */
+}
+
+.div-container-icon {
+  width: 38.1px;
+  height: 37.8px;
+}
+.nav-navicon {
+  width: 39.3px;
+  height: 39.3px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div-wrapper {
+  position: absolute;
+  top: 54px;
+  left: 12px;
+  width: 351px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+.div-container {
+  width: 375px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  left: 0px;
+  height: 149px;
+  z-index: 0;
+}
+.header-header-header {
+  width: 100%;
+  position: relative;
+  background-color: #fdfbf9;
+  height: 149px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 12px;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0;
+  line-height: normal;
+}
+
+
+
+
+/* Button */
+.sidenav-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0; /* Sidebar appears from the right */
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+/* The navigation menu links */
+.sidenav .li-navigation {
+  padding: 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidenav .li-navigation:hover {
+  color: #f1f1f1;
+}
+
+/* Close button */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px; /* Since it's a right sidebar */
+  font-size: 36px;
+  color: rgb(14, 56, 17);
+  text-decoration: none;
+}
+
+/* Main content */
+#main {
+  transition: margin-right 0.5s;
+  padding: 20px;
+}
