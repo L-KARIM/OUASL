@@ -1,0 +1,113 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+#FAQ .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    gap: 10px;
+}
+/** css rules end **/
+
+/** FAQ start **/
+#FAQ {
+    --main-color: #FDFBF9;
+    --tints-1: #FFFFFF;
+    --shades-1: #F4F0E9;
+    --secondary-color: #F4F1EB;
+    --third-color: #000000;
+    --fourth-color: #1C3533;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    font-family: "Cairo", sans-serif;
+}
+#FAQ .content {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    padding: 90px 50px 90px 50px;
+}
+#FAQ .FAQImageContainer img{
+    border-radius: 30px;
+    box-shadow: -15px 15px 0 var(--fourth-color);
+}
+#FAQ .FAQTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 34px 0 34px 40px;
+    direction: rtl;
+}
+#FAQ .FAQTitle {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 120%;
+    margin: 0;
+}
+#FAQ .FAQIntroduction {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    margin: 0;
+    padding-top: 13px;
+    padding-left: 30px;
+}
+#FAQ .accordion {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+#FAQ .accordion-element:not(.accordion-element:last-of-type) {
+  border-bottom: 1px solid var(--shades-10);
+}
+#FAQ .accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#FAQ .accordion-title h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 150%;
+}
+#FAQ .accordion-content {
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 17px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: padding 0.18s linear, max-height 0.18s linear, opacity 0.30s linear;
+  margin: 0;
+}
+#FAQ .accordion-element {
+    padding: 37px 0 0 0;
+}
+#FAQ .accordion-element.active {
+  transition: padding 0.18s linear, max-height 0.18s linear, opacity 0.30s linear;
+}
+#FAQ .arrow {
+  cursor: pointer;
+  border: 0px solid var(--third-color);
+  background-color: var(--main-color);
+}
+#FAQ .accordion-element.active .accordion-content {
+  max-height: fit-content ;
+  opacity: 1;
+  padding: 21px 0 0 5px;
+}
+#FAQ .accordion-element.active .arrow img {
+  transform: rotate(-90deg);
+  transition: all 0.18s linear;
+}
+/** FAQ end **/
