@@ -1,0 +1,128 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+#Features .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    gap: 10px;
+}
+/** css rules end **/
+
+/** Features start **/
+#Features {
+    --main-color: #FDFBF9;
+    --tints-1: #FFFFFF;
+    --secondary-color: #F4F1EB;
+    --third-color: #000000;
+    --fourth-color: #1C3533;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    font-family: "Cairo", sans-serif;
+    background-color: var(--main-color);
+}
+#Features .content {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    padding: 93px 50px 93px 50px;
+}
+#Features .FeaturesHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 0px 355px 55px 355px;
+}
+#Features .FeaturesHeader {
+    border: 1.5px solid var(--third-color);
+    border-radius: 31px;
+}
+#Features .FeaturesHeader .Text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 7.5px 22px;
+    margin: 0;
+}
+#Features .FeaturesTitleContainer {
+    gap: 10px;
+}
+#Features .FeaturesTitle {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 120%;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+#Features .FeaturesItemsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 50px 0px 50px;
+}
+#Features .Feature3,
+#Features .Feature2,
+#Features .Feature1 {
+    text-align: right;
+    gap: 10px;
+    padding: 3px 0 3px 0;
+}
+#Features .Feature3 {
+    padding-right: 121px;
+}
+#Features .Feature2 {
+    padding-right: 121px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #Features .FeaturesHeaderContainer {
+        padding: 0 99px 0 99px;
+    }
+    #Features .Feature3 {
+        padding-right: 21px;
+    }
+    #Features .Feature2 {
+        padding-right: 21px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    #Features .FeaturesHeaderContainer {
+        padding: 0 50px 0 50px;
+    }
+    #Features .Feature3 {
+        padding-right: 11px;
+    }
+    #Features .Feature2 {
+        padding-right: 11px;
+    }
+    #Features .FeaturesItemsContainer {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #Features .content {
+        padding: 63px 12px 63px 12px;
+    }
+    #Features .FeaturesItemsContainer {
+        flex-direction: column-reverse;
+    }
+    #Features .FeaturesHeaderContainer,
+    #Features .FeaturesTitle {
+        padding: 0;
+    }
+    #Features .Feature3,
+    #Features .Feature2,
+    #Features .Feature1 {
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+}
+/** Features end **/
